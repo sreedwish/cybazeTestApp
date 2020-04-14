@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_2"
+        app:checkedButton="@id/btnAndroid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAndroid"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_single"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btniOS"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_range"
+            android:textAllCaps="false" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtNumber"
+        style="@style/edt_input"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/img_40dp"
+        android:layout_marginTop="@dimen/padding_16"
+        android:hint="@string/hint_number"
+        android:inputType="number"
+        android:maxLength="1"
+        app:layout_constraintEnd_toStartOf="@id/guideV1"
+        android:layout_marginEnd="@dimen/padding_4"
+        app:layout_constraintTop_toBottomOf="@id/toggleGroup" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtCount"
+        style="@style/edt_input"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/img_40dp"
+        android:hint="@string/hint_count"
+        android:inputType="number"
+        android:maxLength="1"
+        android:layout_marginStart="@dimen/padding_4"
+        app:layout_constraintStart_toEndOf="@id/guideV1"
+        app:layout_constraintTop_toTopOf="@id/edtNumber" />
+
+    <LinearLayout
+        android:id="@+id/lin_edt_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/padding_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtStart"
+            style="@style/edt_input"
+            android:layout_width="@dimen/edt_medium"
+            android:layout_height="@dimen/img_40dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:hint="@string/hint_start"
+            android:maxLength="1"
+            android:inputType="number"
+            android:layout_marginEnd="@dimen/padding_4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtEnd"
+            style="@style/edt_input"
+            android:layout_width="@dimen/edt_medium"
+            android:layout_height="@dimen/img_40dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:hint="@string/hint_end"
+            android:maxLength="1"
+            android:inputType="number"
+            android:layout_marginEnd="@dimen/padding_4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtStep"
+            style="@style/edt_input"
+            android:layout_width="@dimen/edt_medium"
+            android:layout_height="@dimen/img_40dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:hint="@string/hint_step"
+            android:inputType="number"
+            android:text="1"
+            android:maxLength="1"
+            android:layout_marginEnd="@dimen/padding_4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCount2"
+            style="@style/edt_input"
+            android:layout_width="@dimen/edt_medium"
+            android:layout_height="@dimen/img_40dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:hint="@string/hint_count"
+            android:maxLength="1"
+            android:inputType="number"
+            android:layout_marginEnd="@dimen/padding_4" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lin_edt_container"
+        android:layout_marginTop="@dimen/padding_16">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:layout_width="@dimen/btn_medium"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="#03A9F4"
+            android:text="a"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            android:layout_width="@dimen/btn_medium"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="#03A9F4"
+            android:text="b"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            android:layout_width="@dimen/btn_medium"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="#03A9F4"
+            android:text="c"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            android:layout_width="@dimen/btn_medium"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="#03A9F4"
+            android:text="@string/btn_all"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

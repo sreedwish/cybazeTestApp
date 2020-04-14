@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Cybaze Machine Test</string>
+    <string name="lbl_login">Log In</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_bottom_msg">min more to stop the game</string>
+    <string name="btn_digit1">1 Digit</string>
+    <string name="btn_digit2">2 Digit</string>
+    <string name="btn_digit3">3 Digit</string>
+    <string name="btn_single">Single</string>
+    <string name="btn_range">Range</string>
+    <string name="hint_number">Number</string>
+    <string name="hint_count">Count</string>
+    <string name="btn_all">All</string>
+    <string name="hint_start">Start</string>
+    <string name="hint_end">End</string>
+    <string name="hint_step">Step</string>
+    <string name="btn_plus">PLUS</string>
+    <string name="btn_box">BOX</string>
+    <string name="btn_both">BOTH</string>
+    <string name="btn_super">SUPER</string>
+    <string name="lbl_total">TOTAL :</string>
+    <string name="btn_save">Save</string>
+    <string name="hint_amount">AMOUNT :</string>
+    <string name="lbl_count">COUNT :</string>
+    <string name="msg_invalid_email">Invalid email</string>
+    <string name="msg_invalid_password">Password empty</string>
+    <string name="msg_count_empty">Count empty</string>
+    <string name="msg_number_empty">Number empty</string>
+    <string name="msg_start_empty">Start value empty</string>
+    <string name="msg_end_empty">End value empty</string>
+    <string name="msg_step_empty">Step value missing</string>
+    <string name="msg_loading">Loading..</string>
+    <string name="lbl_game_over">Game over !!</string>
+</resources>

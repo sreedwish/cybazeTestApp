@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLoginTitle"
+        style="@style/main_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:text="Sample Testing"
+        android:gravity="center"
+        app:fontFamily="@font/roboto_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv1"
+        style="@style/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/tvLoginTitle"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        app:cardCornerRadius="@dimen/padding_6"
+        app:cardElevation="@dimen/padding_6"
+        app:contentPadding="@dimen/padding_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/padding_4"
+            android:layout_marginEnd="@dimen/padding_4">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_24"
+                android:text="@string/lbl_email" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_40dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="@dimen/padding_4"
+                style="@style/edt_input"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_24"
+                android:text="@string/lbl_password" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_40dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="@dimen/padding_4"
+                android:layout_marginBottom="@dimen/padding_24"
+                style="@style/edt_input"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogIn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/img_medium"
+        android:layout_marginTop="@dimen/padding_16"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/lbl_login"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:elevation="@dimen/padding_4"
+        app:layout_constraintEnd_toEndOf="@id/tvLoginTitle"
+        app:layout_constraintStart_toStartOf="@id/tvLoginTitle"
+        app:layout_constraintTop_toBottomOf="@id/card" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimerMsg"
+        style="@style/subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/lbl_bottom_msg"
+        android:textSize="@dimen/txt_size_title_recycler"
+        app:layout_constraintEnd_toEndOf="@id/btnLogIn"
+        app:layout_constraintStart_toStartOf="@id/btnLogIn"
+        app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="AppTheme.Dash" >
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/text_grey</item>
+    </style>
+
+
+    <style name="edt_input" parent="Widget.AppCompat.EditText">
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/edt_bg</item>
+        <item name="android:paddingStart">@dimen/padding_10</item>
+        <item name="android:paddingEnd">@dimen/padding_10</item>
+        <item name="background">@drawable/edt_bg</item>
+        <item name="paddingStart">@dimen/padding_10</item>
+        <item name="paddingEnd">@dimen/padding_10</item>
+        <item name="android:textSize">@dimen/txt_size_title_recycler</item>
+    </style>
+
+    <style name="main_title_recycler_16sp_semi_bold" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/txt_size_title_recycler</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="main_title_recycler_14sp" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/txt_size_title_recycler_small</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="lineHeight">18sp</item>
+    </style>
+
+    <style name="subtitle_text" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/txt_size_sub_title</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="lineHeight">18sp</item>
+
+    </style>
+
+    <style name="hint_text" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/txt_size_sub_title</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="lineHeight">18sp</item>
+
+    </style>
+
+    <style name="main_title" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/txt_size_title_main</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+
+</resources>

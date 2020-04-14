@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="dat"
+            type="com.sreedwish.cybazeapp.models.Bean_data" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_4"
+    android:paddingBottom="@dimen/padding_4"
+    android:layout_marginBottom="@dimen/padding_2"
+    android:weightSum="1">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvT1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:textAllCaps="true"
+        android:layout_marginStart="@dimen/padding_10"
+        android:text="@{dat.t1}"
+        style="@style/main_title_recycler_16sp_semi_bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvT2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:textAllCaps="true"
+        android:text="@{dat.t2}"
+        style="@style/main_title_recycler_16sp_semi_bold" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvT3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:textAllCaps="true"
+        style="@style/main_title_recycler_16sp_semi_bold"
+        android:text="@{dat.t3}"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvT4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:textAllCaps="true"
+        style="@style/main_title_recycler_16sp_semi_bold"
+        android:text="@{dat.t4}"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_marginEnd="@dimen/padding_10"
+        android:checked="@{dat.checked}"/>
+
+</LinearLayout>
+</layout>

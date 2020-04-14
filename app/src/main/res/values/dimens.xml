@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">26dp</dimen>
+    <dimen name="activity_horizontal_margin_2">22dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="card_corner_radius_normal">2dp</dimen>
+    <dimen name="curv_dash_tool_bg">26dp</dimen>
+    <dimen name="curv_big_tool_bg">40dp</dimen>
+    <dimen name="padding_14">14dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+
+
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+
+    <dimen name="img_40dp">40dp</dimen>
+    <dimen name="img_medium">56dp</dimen>
+    <dimen name="nav_header_height">220dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+
+    <!-- Text sizes common for the app-->
+    <dimen name="txt_size_title_main">20sp</dimen>
+    <dimen name="txt_size_title_recycler">16sp</dimen>
+    <dimen name="txt_size_title_recycler_small">14sp</dimen>
+    <dimen name="txt_size_sub_title">14sp</dimen>
+    <dimen name="txt_size_description_recycler">13sp</dimen>
+    <dimen name="txt_size_description_main">15sp</dimen>
+    <dimen name="txt_size_time_recycler">12sp</dimen>
+    <dimen name="btn_medium">80dp</dimen>
+    <dimen name="edt_medium">82dp</dimen>
+    <dimen name="btn_long">100dp</dimen>
+
+</resources>
